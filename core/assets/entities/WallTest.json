@@ -1,0 +1,37 @@
+{
+  "Key": "WallTest",
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Input": {
+    "Adapter": "LocalMapInputAdapter",
+    "Handler": "LocalMapKeyPressHandler"
+  },
+  "Map": {
+    "Dimension": {
+      "Width": 640,
+      "Height": 480
+    },
+    "TiledMap": "WallTest.tmx"
+  },
+  "Music": {
+    "AssetName": "DungeonBgTheme"
+  },
+  "Player": {
+    "AssetName": "CharacterAlexa",
+    "Name": "Alexa",
+    "Dimension": {
+      "Width": 32,
+      "Height": 48
+    },
+    "InitialPosition": {
+      "X": 100,
+      "Y": 50
+    },
+    "InitialOrientation": "DOWN"
+  },
+  "Triggers": [],
+  "NonPlayableCharacters": [],
+  "Enemies": []
+}

@@ -1,0 +1,79 @@
+{
+  "Key": "Desert",
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Input": {
+    "Adapter": "LocalMapInputAdapter",
+    "Handler": "LocalMapKeyPressHandler"
+  },
+  "Map": {
+    "Dimension": {
+      "Width": 1024,
+      "Height": 1024
+    },
+    "TiledMap": "desert_demo.tmx"
+  },
+  "Music": {
+    "AssetName": "DesertBgTheme"
+  },
+  "Player": {
+    "AssetName": "CharacterAlexa",
+    "Name": "Alexa",
+    "Dimension": {
+      "Width": 32,
+      "Height": 48
+    },
+    "InitialPosition": {
+      "X": 700,
+      "Y": 500
+    },
+    "InitialOrientation": "DOWN"
+  },
+  "Triggers": [
+    {
+      "Action": "Teleport",
+      "Location": {
+        "X": 28,
+        "Y": 35
+      },
+      "Handler": "DesertCaveTrigger"
+    }
+  ],
+  "NonPlayableCharacters": [
+    {
+      "AssetName": "CharacterMagus",
+      "Name": "Magus",
+      "Location": {
+        "X": 740,
+        "Y": 550
+      },
+      "Dialog": "dialog/CharacterMagus.json",
+      "Trigger": "NpcDialogTriggerHandler"
+    },
+    {
+      "AssetName": "CharacterCrono",
+      "Name": "Crono",
+      "Location": {
+        "X": 600,
+        "Y": 400
+      },
+      "Dialog": "dialog/CharacterCrono.json",
+      "Trigger": "NpcDialogTriggerHandler"
+    },
+    {
+      "AssetName": "CharacterMarle",
+      "Name": "Marle",
+      "Location": {
+        "X": 570,
+        "Y": 400
+      },
+      "Dialog": "dialog/Halloween.json",
+      "Trigger": "NpcDialogLevelUpTriggerHandler"
+    }
+  ],
+  "Enemies": [
+    "monsters/Slime.json"
+  ]
+}

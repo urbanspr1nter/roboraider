@@ -1,0 +1,25 @@
+{
+  "Key": "BattleScreen",
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Input": {
+    "Adapter": "BattleScreenInputAdapter",
+    "Handler": "BattleScreenKeyPressHandler"
+  },
+  "Map": {
+    "Dimension": {
+      "Width": 640,
+      "Height": 480
+    },
+    "TiledMap": null
+  },
+  "Music": {
+    "AssetName": "DefaultBattleBgm"
+  },
+  "Player": null,
+  "Triggers": [],
+  "NonPlayableCharacters": [],
+  "Enemies": []
+}

@@ -1,0 +1,25 @@
+{
+  "Key": "TitleScreen",
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Input": {
+    "Adapter": "TitleScreenInputAdapter",
+    "Handler": "TitleScreenKeyPressHandler"
+  },
+  "Map": {
+    "Dimension": {
+      "Width": 640,
+      "Height": 480
+    },
+    "TiledMap": null
+  },
+  "Music": {
+    "AssetName": "TitleScreenBgTheme"
+  },
+  "Player": null,
+  "Triggers": [],
+  "NonPlayableCharacters": [],
+  "Enemies": []
+}

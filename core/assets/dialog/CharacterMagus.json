@@ -1,0 +1,68 @@
+{
+  "text": [
+    {
+      "key": "I am Magus.",
+      "neighbors": [
+        "What is your name?"
+      ]
+    },
+    {
+      "key": "What is your name?",
+      "neighbors": [
+        "Alexa.",
+        "Roger."
+      ]
+    },
+    {
+      "key": "Alexa.",
+      "neighbors": [
+        "Hello, Alexa."
+      ]
+    },
+    {
+      "key": "Hello, Alexa.",
+      "neighbors": [
+        "How are you?"
+      ]
+    },
+    {
+      "key": "Roger.",
+      "neighbors": [
+        "Hello, Roger."
+      ]
+    },
+    {
+      "key": "Hello, Roger.",
+      "neighbors": [
+        "How are you?"
+      ]
+    },
+    {
+      "key": "How are you?",
+      "neighbors": [
+        "I'm fine.",
+        "Not great..."
+      ]
+    },
+    {
+      "key": "I'm fine.",
+      "neighbors": [
+        "Well, that's great to hear!"
+      ]
+    },
+    {
+      "key": "Not great...",
+      "neighbors": [
+        "You'll have better days."
+      ]
+    },
+    {
+      "key": "Well, that's great to hear!",
+      "neighbors": []
+    },
+    {
+      "key": "You'll have better days.",
+      "neighbors": []
+    }
+  ]
+}

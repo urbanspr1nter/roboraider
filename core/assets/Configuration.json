@@ -1,0 +1,265 @@
+{
+  "Game": {
+    "Fps": 18,
+    "LogLevel": "DEBUG",
+    "Debug": false,
+    "TitleScreen": {
+      "Image": "ui/titles/title_screen.png",
+      "Music": "TitleScreenBgTheme",
+      "Options": [
+        " Start",
+        " Quit"
+      ]
+    },
+    "Watermark": {
+      "Display": false,
+      "Size": 36,
+      "Image": {
+        "Location": {
+          "X": 432,
+          "Y": 8
+        },
+        "File": "jackolantern.png"
+      },
+      "Text": {
+        "Location": {
+          "X": 470,
+          "Y": 32
+        },
+        "Value": "Happy Halloween!"
+      }
+    }
+  },
+  "Debug": {
+    "Background": {
+      "Image": "ui/debug/dbg_background.png"
+    },
+    "Font": {
+      "Resource": "ui/fonts/rpg/rpg-small.fnt",
+      "Image": "ui/fonts/rpg/rpg-small.png"
+    }
+  },
+  "Ui": {
+    "Font": {
+      "Resource": "ui/fonts/rpg/rpg.fnt",
+      "Image": "ui/fonts/rpg/rpg.png"
+    },
+    "Menu": {
+      "Image": "ui/blue_menu_xparent3.png",
+      "DebugImage": "ui/modern_menu.png"
+    },
+    "Cursor": {
+      "Image": "ui/cursor.png"
+    }
+  },
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Map": {
+    "Unit": {
+      "Width": 16,
+      "Height": 16
+    }
+  },
+  "Sprite": {
+    "Unit": {
+      "Width": 32,
+      "Height": 48
+    },
+    "StepLength": 8
+  },
+  "Entities": [
+    "entities/Desert.json",
+    "entities/Dungeon-1.json",
+    "entities/Dungeon-2.json",
+    "entities/TitleScreen.json",
+    "entities/MenuScreen.json",
+    "entities/WallTest.json",
+    "entities/BattleScreen.json"
+  ],
+  "Assets": {
+    "Registry": [
+      {
+        "Type": "Sprite",
+        "Name": "EnemySlimeSprite",
+        "File": "graphics/enemies/slime.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "EnemySlimeAttackSprite",
+        "File": "graphics/enemies/slime_attack.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "SlashAnimation",
+        "File": "graphics/weapons/slash.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "FlameAnimation",
+        "File": "graphics/skills/flame_sprite.png"
+      },
+      {
+        "Type": "Background",
+        "Name": "SkyBattleBackground",
+        "File": "graphics/backdrop/sky.png"
+      },
+      {
+        "Type": "Background",
+        "Name": "SpaceBattleBackground",
+        "File": "graphics/backdrop/space.png"
+      },
+      {
+        "Type": "Sound",
+        "Name": "ItemUsed",
+        "File": "sounds/used.wav",
+        "Volume": 77
+      },
+      {
+        "Type": "Sound",
+        "Name": "Punch",
+        "File": "sounds/punch.wav",
+        "Volume": 77
+      },
+      {
+        "Type": "Sprite",
+        "Name": "DownArrow",
+        "File": "ui/down_arrow.png"
+      },
+      {
+        "Type": "Sound",
+        "Name": "BattleFlame",
+        "File": "sounds/flame.wav",
+        "Volume": 77
+      },
+      {
+        "Type": "Music",
+        "Name": "VictoryFanfare",
+        "File": "music/victory.mp3",
+        "Volume": 70
+      },
+      {
+        "Type": "Sound",
+        "Name": "BattleSliceSound",
+        "File": "sounds/slice.wav",
+        "Volume": 77
+      },
+      {
+        "Type": "Sound",
+        "Name": "DefeatedEnemy",
+        "File": "sounds/defeated_enemy.wav",
+        "Volume": 85
+      },
+      {
+        "Type": "Music",
+        "Name": "DefaultBattleBgm",
+        "File": "music/battle.mp3",
+        "Volume": 70
+      },
+      {
+        "Type": "Texture",
+        "Name": "FullScreenDimmedTexture",
+        "File": "ui/tint-texture-640_480.png"
+      },
+      {
+        "Type": "Music",
+        "Name": "TitleScreenBgTheme",
+        "File": "music/title_screen.mp3",
+        "Volume": 70
+      },
+      {
+        "Type": "Sound",
+        "Name": "CursorError",
+        "File": "sounds/error.wav",
+        "Volume": 100
+      },
+      {
+        "Type": "Sound",
+        "Name": "CursorCancel",
+        "File": "sounds/cancel.wav",
+        "Volume": 70
+      },
+      {
+        "Type": "Sound",
+        "Name": "CursorSound",
+        "File": "sounds/cursor.wav",
+        "Volume": 55
+      },
+      {
+        "Type": "Sound",
+        "Name": "ConfirmSound",
+        "File": "sounds/confirm.wav",
+        "Volume": 33
+      },
+      {
+        "Type": "Music",
+        "Name": "DesertBgTheme",
+        "File": "music/desert.mp3",
+        "Volume": 50
+      },
+      {
+        "Type": "Music",
+        "Name": "GrassBgTheme",
+        "File": "music/nature.mp3",
+        "Volume": 50
+      },
+      {
+        "Type": "Music",
+        "Name": "DungeonBgTheme",
+        "File": "music/dungeon.mp3",
+        "Volume": 50
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterRoger",
+        "File": "graphics/sprites/roger.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterAlexa",
+        "File": "graphics/sprites/alexa.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterCronoOg",
+        "File": "crono.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterCrono",
+        "File": "crono.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterMarle",
+        "File": "marle.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterMarleOg",
+        "File": "marle.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterMagus",
+        "File": "magus.png"
+      },
+      {
+        "Type": "Sprite",
+        "Name": "CharacterMagusOg",
+        "File": "magus.png"
+      },
+      {
+        "Type": "Map",
+        "Name": "MapOutdoorDemo",
+        "File": "OutdoorDemo.tmx"
+      },
+      {
+        "Type": "Map",
+        "Name": "MapDesertDemo",
+        "File": "desert_demo.tmx"
+      }
+    ]
+  }
+}

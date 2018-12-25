@@ -1,0 +1,46 @@
+{
+  "Key": "Dungeon-1",
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Input": {
+    "Adapter": "LocalMapInputAdapter",
+    "Handler": "LocalMapKeyPressHandler"
+  },
+  "Map": {
+    "Dimension": {
+      "Width": 640,
+      "Height": 480
+    },
+    "TiledMap": "DungeonDemo1.tmx"
+  },
+  "Music": {
+    "AssetName": "DungeonBgTheme"
+  },
+  "Player": {
+    "AssetName": "CharacterAlexa",
+    "Name": "Alexa",
+    "Dimension": {
+      "Width": 32,
+      "Height": 48
+    },
+    "InitialPosition": {
+      "X": 100,
+      "Y": 200
+    },
+    "InitialOrientation": "DOWN"
+  },
+  "Triggers": [
+    {
+      "Action": "Teleport",
+      "Location": {
+        "X": 18,
+        "Y": 23
+      },
+      "Handler": "DungeonTriggerTo2"
+    }
+  ],
+  "NonPlayableCharacters": [],
+  "Enemies": []
+}

@@ -1,0 +1,28 @@
+{
+  "text": [
+    {
+      "key": "Hi there, let's test something.",
+      "neighbors": ["So..."]
+    },
+    {
+      "key": "So...",
+      "neighbors": ["Level to 50!", "... Level up?"]
+    },
+    {
+      "key": "Level to 50!",
+      "neighbors": ["You bet!"]
+    },
+    {
+      "key": "... Level up?",
+      "neighbors": ["You've just leveled up to 50 in this convo!"]
+    },
+    {
+      "key": "You bet!",
+      "neighbors": []
+    },
+    {
+      "key": "You've just leveled up to 50 in this convo!",
+      "neighbors": []
+    }
+  ]
+}

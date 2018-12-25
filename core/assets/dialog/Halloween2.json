@@ -1,0 +1,32 @@
+{
+  "text": [
+    {
+      "key": "Hey now, don't be \ngreedy!",
+      "neighbors": ["Okay.", "MORE!!!"]
+    },
+    {
+      "key": "Okay.",
+      "neighbors": ["Be polite!"]
+    },
+    {
+      "key": "MORE!!!",
+      "neighbors": ["Where are your manners?"]
+    },
+    {
+      "key": "Where are your manners?",
+      "neighbors": ["Manners?", "Sorry..."]
+    },
+    {
+      "key": "Manners?",
+      "neighbors": ["Be polite!"]
+    },
+    {
+      "key": "Sorry...",
+      "neighbors": ["Be polite!"]
+    },
+    {
+      "key": "Be polite!",
+      "neighbors": []
+    }
+  ]
+}

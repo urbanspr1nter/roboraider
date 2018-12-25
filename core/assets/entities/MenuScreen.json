@@ -1,0 +1,23 @@
+{
+  "Key": "MenuScreen",
+  "ViewPort": {
+    "Width": 640,
+    "Height": 480
+  },
+  "Input": {
+    "Adapter": "MenuScreenInputAdapter",
+    "Handler": "MenuScreenKeyPressHandler"
+  },
+  "Map": {
+    "Dimension": {
+      "Width": 640,
+      "Height": 480
+    },
+    "TiledMap": null
+  },
+  "Music": null,
+  "Player": null,
+  "Triggers": [],
+  "NonPlayableCharacters": [],
+  "Enemies": []
+}

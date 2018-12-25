@@ -1,0 +1,103 @@
+{
+  "text": [
+    {
+      "key": "Hi there, I'm Crono.",
+      "neighbors": [
+        "Do you like this game?"
+      ]
+    },
+    {
+      "key": "Do you like this game?",
+      "neighbors": [
+        "Yes",
+        "No",
+        "Maybe so."
+      ]
+    },
+    {
+      "key": "Yes",
+      "neighbors": [
+        "Well, then you're cool!"
+      ]
+    },
+    {
+      "key": "No",
+      "neighbors": [
+        "Boo! You're not cool!"
+      ]
+    },
+    {
+      "key": "Maybe so.",
+      "neighbors": ["I'll keep that in mind."]
+    },
+    {
+      "key": "Well, then you're cool!",
+      "neighbors": [
+        "What do you like about it?"
+      ]
+    },
+    {
+      "key": "What do you like about it?",
+      "neighbors": [
+        "The story.",
+        "The graphics."
+      ]
+    },
+    {
+      "key": "The story.",
+      "neighbors": [
+        "The story, eh? Well not much of that here..."
+      ]
+    },
+    {
+      "key": "The graphics.",
+      "neighbors": [
+        "Well, they are pretty good!"
+      ]
+    },
+    {
+      "key": "The story, eh? Well not much of that here...",
+      "neighbors": []
+    },
+    {
+      "key": "Well, they are pretty good!",
+      "neighbors": []
+    },
+    {
+      "key": "Boo! You're not cool!",
+      "neighbors": ["Why not?"]
+    },
+    {
+      "key": "Why not?",
+      "neighbors": ["No reason.", "I'm a hater."]
+    },
+    {
+      "key": "No reason.",
+      "neighbors": ["There's always room for improvement."]
+    },
+    {
+      "key": "I'm a hater.",
+      "neighbors": ["There's always room for improvement."]
+    },
+    {
+      "key": "There's always room for improvement.",
+      "neighbors": ["But what can I improve?"]
+    },
+    {
+      "key": "But what can I improve?",
+      "neighbors": ["Maybe graphics.", "Maybe story."]
+    },
+    {
+      "key": "Maybe graphics.",
+      "neighbors": ["I'll keep that in mind."]
+    },
+    {
+      "key": "Maybe story.",
+      "neighbors": ["I'll keep that in mind."]
+    },
+    {
+      "key": "I'll keep that in mind.",
+      "neighbors": []
+    }
+  ]
+}
