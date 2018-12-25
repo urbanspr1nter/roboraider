@@ -211,7 +211,7 @@
       <module fileurl="file://$PROJECT_DIR$/ios-moe/ios-moe.iml" filepath="$PROJECT_DIR$/ios-moe/ios-moe.iml" group="ios-moe" />
       <module fileurl="file://$PROJECT_DIR$/ios-moe/ios-moe_main.iml" filepath="$PROJECT_DIR$/ios-moe/ios-moe_main.iml" group="ios-moe" />
       <module fileurl="file://$PROJECT_DIR$/ios-moe/ios-moe_test.iml" filepath="$PROJECT_DIR$/ios-moe/ios-moe_test.iml" group="ios-moe" />
-      <module fileurl="file://$PROJECT_DIR$/roboraidergdx.iml" filepath="$PROJECT_DIR$/roboraidergdx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roboraider.iml" filepath="$PROJECT_DIR$/roboraider.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
