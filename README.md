@@ -525,6 +525,67 @@ The menu system applies to the following:
 
 The battle system is a state machine. The battle system goes through several states and each state can be implemented as a `BattleHandler`. 
 
+The following stages are encoded as a `CombatStage` type, and are pretty self-explanatory through the comments themselves:
+
+```
+// Displays the following and waits for player input:
+//  Attack, Skill, Item, Run.
+WaitingAction,
+
+// Sometimes there needs to be a slight delay before having the
+// enemy attack. Use this state to handle that.
+DelayEnemyAttack,
+
+// The state which defines the enemy's turn
+EnemyAttack,
+
+// The states which an attack can flow to.
+ActionAttack, // Display list of monsters
+ActionAttackApply, // Apply the melee damage
+ActionAttackApplyShowDamage, // Show the damage done by the melee action
+ActionAttackApplyComplete, // Completed the attacked
+
+// The states which a skill usage can flow to.
+ActionSkill, // Display list of skills
+ActionSkillTarget, // Skill chosen. Player should determine who to use skill on... player, or monster?
+ActionSkillTargetChosen, // Target has been chosen for the skill.
+ActionSkillApply, // Apply the skill on the target
+ActionSkillApplyShowDamage, // Show the damage of the skill
+ActionSkillApplyComplete, // Done using the skill!
+
+// The states in which using an item can flow to.
+ActionItem, // Display list of item.
+ActionItemTarget, // Valid item chosen. Player should determine who to use item on... player, or monster?
+ActionItemApply, // Apply the item on the target.
+
+// The states in which choosing run can flow to.
+ActionRun, // Check to see if we can run. Is anyone a boss? Is it a scripted battle?
+ActionRunBoss, // Cannot run due to boss, or scripted battle.
+ActionRunSuccess, // Can run. End the battle.
+ActionRunInvalid, // Cannot run for various reasons
+BattleEndFromRun, // Player has ran away.
+
+// The states in which how the end of a battle is handled
+BattleEnd, // Player has won the battle. Stop battle music, play victory bgm, etc.
+BattleEndDeath, // Battle has ended from death
+BattleEndApplied, // Display relevant data.
+BattleEndExp, // Get EXP
+BattleEndExpApplied, // EXP has been applied.
+BattleEndLevelUp, // Level up if needed.
+BattleEndLevelUpApplied, // Level Up has been applied.
+BattleEndItem, // Get Item
+BattleEndItemApplied, // Item has been placed into inventory
+BattleEndExit, // Exit now
+
+// Finishing the battle.
+Done, // Fade out, and cleaned up
+Exited; // Nothing more.
+```
+
+As you can see, the flow is very linear. Ultimately, every action starts as a `WaitingAction` and is explicitly advanced through the use of `moveToStage` calls in `BattleStateInteraction`.
+
+It is very notable that in each stage, one can take advantage of the `Timer` functions to apply extra animation, effects, and/or cut scenes before marking the battle active again.
+
 ### Programming and API
 
 [TODO]
