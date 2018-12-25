@@ -488,7 +488,22 @@ Once these dialogs are created, they can be associated with the NPC through the 
 
 #### Entities Definition
 
-[TODO]
+The main game is driven by a very primitive state machine. A state is basically an implementation of `BaseState` and can be set to be the current *active* state to be executed within the main game loop.
+
+A state must implement, minimially: `onEnter`, `onUpdate`, `onExecute` and `onExit`. 
+
+Here's when each method in the lifecycle gets invoked:
+
+* onEnter
+    * Invoked when the state is first assigned to be the active state.
+* onUpdate
+    * Invoked before the state is executed in each cycle.
+* onExecute
+    * Invoked on each render cycle.
+* onExit
+    * Invoked before the state is set to be inactive, or removed from execution on the state machine.
+
+`LocalMapState` is the state type which will be used most often. All map entities will essentially be some form of which LocalMapState can injest and produce a playable map within the game. 
 
 1. Define a JSON file with the entity information
 2. Add it to the `Entities` keys in the `Configuration.json` file.
