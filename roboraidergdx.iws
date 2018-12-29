@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a34b8d29-f8ce-4622-a853-80ac9ab77e63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/contracts/BattleInvokable.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/contracts/BattleInvokable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/enums/Choices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/state/StateMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roboraidergdx.iws" beforeDir="false" afterPath="$PROJECT_DIR$/roboraidergdx.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/assets/ui/titles/title_screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/core/assets/ui/titles/title_screen.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1907,7 +1904,7 @@
     <option name="LAST_EDITED_MODULE_NAME" />
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1002" />
@@ -2368,7 +2365,7 @@
     <property name="SearchEverywhereHistoryKey" value="main.java&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/Main.java&#10;BaseState&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BaseState.java&#10;battle&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;combats&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/CombatStage.java&#10;battlehandl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;main&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/Main.java&#10;desert&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;Flame&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.Flame&#10;Sl&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.Slash&#10;Main&#9;PSI&#9;JAVA://com.mygdx.game.Main&#10;configu&#9;PSI&#9;JAVA://com.mygdx.game.configuration.ConfigurationBuilder&#10;battlestatehe&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleStateHelper.java&#10;battleinter&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;battlestate&#9;PSI&#9;JAVA://com.mygdx.game.state.BattleState&#10;Configuration&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;Main.ja&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/Main.java&#10;config&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;battlekey&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;actionattackApp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;battlein&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;uiHelp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleUiHelper.java&#10;actionattack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;actiona&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyShowDamage.java&#10;attack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;waiting&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/WaitingAction.java&#10;wait&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/WaitingAction.java&#10;confi&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;des&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;muk&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/monsters/Muk.json&#10;desert.json&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;damag&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/graphics/animation/DamageCounter.java&#10;monster&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/objects/Monster.java&#10;attacka&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;slash&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/graphics/animation/Slash.java&#10;localma&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;game&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/GameStore.java&#10;debughu&#9;PSI&#9;JAVA://com.mygdx.game.ui.hud.DebugHud&#10;demonc&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/monsters/DemonCat.json&#10;battleint&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;localmapk&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;battlek&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;localmap&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;statemac&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/state/StateMachine.java&#10;battlestat&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/state/BattleState.java&#10;entitybu&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/map/EntityBuilder.java&#10;gamestore&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/GameStoreEntity.java&#10;stor&#9;PSI&#9;JAVA://com.mygdx.game.GameStore&#10;titles&#9;PSI&#9;JAVA://com.mygdx.game.input.handlers.TitleScreenKeyPressHandler&#10;configuration&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;configurationbu&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/configuration/ConfigurationBuilder.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546052934654" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546054716665" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2542,7 +2539,7 @@
       <workItem from="1545448003617" duration="14038000" />
       <workItem from="1545754015706" duration="3172000" />
       <workItem from="1545765603050" duration="2231000" />
-      <workItem from="1546045144497" duration="2841000" />
+      <workItem from="1546045144497" duration="3493000" />
     </task>
     <servers />
   </component>
@@ -2552,7 +2549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="838595000" />
+    <option name="totallyTimeSpent" value="839247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

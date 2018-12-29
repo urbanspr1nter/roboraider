@@ -107,6 +107,8 @@ A bunch of the included assets are either have been created by myself, procured 
 ui/cursor.png - https://opengameart.org/content/hand-cursor
 ```
 
+Orchid on title screen is by PumpkinGlitters at: http://pumpkinglitters.deviantart.com/ 
+
 ### Building The Project
 
 The recommended IDE to use for building and developing this project is JetBrain's IntelliJ IDEA. You can grab the community edition here: https://www.jetbrains.com/idea/.
