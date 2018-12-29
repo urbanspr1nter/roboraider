@@ -43,6 +43,8 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 	public Main(Configuration configuration) {
 		super();
 		this.config = configuration;
+
+		this.graphicsHelper = new GraphicsHelper();
 	}
 
 	@Override
@@ -56,11 +58,11 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 
 	@Override
 	public void create () {
+		Gdx.app.setLogLevel(this.config.Game.LogLevel);
+		
 		this.gameStore = new GameStore(this.config);
 		this.gameStore.debug = this.config.Game.Debug;
-		Gdx.app.setLogLevel(this.config.Game.LogLevel);
 		this.battleStateHelper = new BattleStateHelper(this.gameStore);
-		this.graphicsHelper = new GraphicsHelper();
 
 		// Title Screen State
 		this.gameStore.stateMachine.setState(
@@ -114,13 +116,9 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 
 				if(t.location().x == cellX && t.location().y == cellY) {
 					if(t.action() == Action.Teleport) {
-						this.gameStore.callbackQueue.registerImmediate(() -> {
-							Map<String, Object> props = new HashMap<>();
-							props.put("seconds", 2);
-							props.put("color", Color.BLACK);
+						this.gameStore.callbackQueue.registerImmediate(() -> new FadeTransitionIn()
+								.render(this.gameStore, this.graphicsHelper.getFadeProps(2, Color.BLACK)));
 
-							return new FadeTransitionIn().render(this.gameStore, props);
-						});
 						t.execute();
 					}
 				}

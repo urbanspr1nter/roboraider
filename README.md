@@ -103,6 +103,10 @@ Basically, if you can run a Java IDE with `JDK 8` installed, with some sort of 3
 
 A bunch of the included assets are either have been created by myself, procured to be for use, and/or downloaded from [OpenGameArt](https://opengameart.org).
 
+```
+ui/cursor.png - https://opengameart.org/content/hand-cursor
+```
+
 ### Building The Project
 
 The recommended IDE to use for building and developing this project is JetBrain's IntelliJ IDEA. You can grab the community edition here: https://www.jetbrains.com/idea/.
@@ -504,6 +508,20 @@ Here's when each method in the lifecycle gets invoked:
     * Invoked before the state is set to be inactive, or removed from execution on the state machine.
 
 `LocalMapState` is the state type which will be used most often. All map entities will essentially be some form of which LocalMapState can injest and produce a playable map within the game. 
+
+Entities have a few basic attributes associated with them:
+
+1. The "key" which defines the name to which the state generated from this entity will be associated with.
+2. ViewPort height and width. 
+3. The input adapter, and key press handler.
+4. Tiled map `.tmx` file which should be loaded along with total dimensions of the map.
+5. Default background music.
+6. Player sprite information
+7. Event triggers
+8. NPC information
+9. Enemies
+
+How to create an entity which can be recognized:
 
 1. Define a JSON file with the entity information
 2. Add it to the `Entities` keys in the `Configuration.json` file.
