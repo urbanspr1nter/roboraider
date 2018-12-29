@@ -59,7 +59,7 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 	@Override
 	public void create () {
 		Gdx.app.setLogLevel(this.config.Game.LogLevel);
-		
+
 		this.gameStore = new GameStore(this.config);
 		this.gameStore.debug = this.config.Game.Debug;
 		this.battleStateHelper = new BattleStateHelper(this.gameStore);
