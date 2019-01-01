@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.graphics.TransitionRenderer;
 import com.mygdx.game.graphics.enums.TransitionType;
+import javafx.animation.Transition;
 
 import java.util.Map;
 
@@ -13,7 +14,7 @@ public class FadeTransitionOut implements Renderable {
     public boolean render(GameStore store, Map<String, Object> props) {
         int seconds = (int)props.get("seconds");
 
-        if(store.transitionRenderer == null) {
+        if(store.transitionRenderer == null || store.transitionRenderer.getType() != TransitionType.Out) {
             store.transitionRenderer = new TransitionRenderer(store, TransitionType.Out, seconds);
         }
 

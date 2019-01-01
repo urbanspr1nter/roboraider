@@ -18,6 +18,7 @@ import com.mygdx.game.GameStore;
 import com.mygdx.game.audio.UiSounds;
 import com.mygdx.game.configuration.Configuration;
 import com.mygdx.game.dialog.DialogManager;
+import com.mygdx.game.graphics.GraphicsHelper;
 import com.mygdx.game.graphics.helpers.FadeTransitionIn;
 import com.mygdx.game.input.CollisionDetector;
 import com.mygdx.game.map.triggers.dialogs.DialogTriggerHandler;
@@ -105,12 +106,8 @@ public class LocalMapKeyPressHandler extends DefaultKeyPressHandler {
             new UiSounds(this.store).playCursorConfirm();
             //this.store.stateMachine.exitState();
             this.store.callbackQueue.registerImmediate(() -> {
-                Map<String, Object> props = new HashMap<>();
-                props.put("color", Color.BLACK);
-                props.put("seconds", 1);
-
                 FadeTransitionIn ft = new FadeTransitionIn();
-                if(ft.render(this.store, props)) {
+                if(ft.render(this.store, new GraphicsHelper().getFadeProps(1, Color.BLACK))) {
                     return true;
                 } else {
                     return false;

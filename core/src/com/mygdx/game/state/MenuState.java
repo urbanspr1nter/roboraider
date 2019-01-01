@@ -10,6 +10,7 @@
 package com.mygdx.game.state;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.GameStoreEntity;
 import com.mygdx.game.logging.Logger;
@@ -32,12 +33,16 @@ public class MenuState extends BaseState {
 
     private ListUtils<String> listUtils;
     private List<String> navigationElements;
+    private ShapeRenderer shapeRenderer;
 
     public MenuState(GameStore store, GameStoreEntity newEntity) {
         super(store, newEntity);
 
         this.listUtils = new ListUtils<>();
         this.navigationElements = this.store.menuInteractionState.getNavigationElements();
+
+        this.shapeRenderer = new ShapeRenderer();
+        this.shapeRenderer.setAutoShapeType(true);
     }
 
     @Override
@@ -54,6 +59,12 @@ public class MenuState extends BaseState {
         if(!this.store.menuInteractionState.getInteracting()) {
             return;
         }
+
+        this.shapeRenderer.begin();
+        this.shapeRenderer.set(ShapeRenderer.ShapeType.Filled);
+        this.shapeRenderer.setColor(new Color(0.4f, 0.4f, 0.4f, 1.0f));
+        this.shapeRenderer.rect(0, 0, 640, 480);
+        this.shapeRenderer.end();
 
         this.toggleAllMenusVisible();
 

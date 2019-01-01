@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a34b8d29-f8ce-4622-a853-80ac9ab77e63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/core/assets/monsters/Slime.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/assets/monsters/Slime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleInteractionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleInteractionState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/state/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/state/MenuState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roboraidergdx.iws" beforeDir="false" afterPath="$PROJECT_DIR$/roboraidergdx.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -240,42 +243,69 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="75" />
+          <entry key="java" value="90" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="75" />
+          <entry key="JAVA" value="90" />
           <entry key="JSON" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="728" />
+          <entry key="java" value="1218" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="728" />
+          <entry key="JAVA" value="1218" />
           <entry key="JSON" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.25697923">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="708">
-                  <caret line="96" column="57" lean-forward="true" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
+                <state relative-caret-position="224">
+                  <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="558">
+                  <caret line="124" column="70" selection-start-line="124" selection-start-column="70" selection-end-line="124" selection-end-column="70" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/state/MenuState.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
                 </state>
               </provider>
             </entry>
@@ -285,19 +315,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleHandler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="367">
-                  <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                <state relative-caret-position="210">
+                  <caret line="96" selection-start-line="96" selection-end-line="96" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -306,10 +327,70 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItemTarget.java">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="150">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                  <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1">
+                  <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="25" selection-start-line="25" selection-end-line="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="16" column="103" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameStore.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-352">
+                  <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#4735#4736#0" expanded="true" />
+                    <element signature="e#4770#4771#0" expanded="true" />
+                    <element signature="e#4654#4655#0" expanded="true" />
+                    <element signature="e#4696#4697#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/WaitingAction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="518">
+                  <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
                 </state>
               </provider>
             </entry>
@@ -317,48 +398,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleUiHelper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="890">
-                  <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+                <state relative-caret-position="440">
+                  <caret line="67" selection-start-line="67" selection-end-line="67" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleInteractionState.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="753">
-                  <caret line="285" column="42" selection-start-line="285" selection-start-column="42" selection-end-line="285" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#7971#7972#0" expanded="true" />
-                    <element signature="e#8017#8018#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItem.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java">
+            <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/DoneAction.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="135">
-                  <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/core/assets/monsters/Slime.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+                  <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -1946,15 +1996,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionSkillTarget.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleUiSounds.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/objects/monsters/PinkMonster.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/objects/MonsterConfiguration.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/animation/DamageCounter.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/objects/MonsterLoader.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/objects/contracts/Targetable.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/objects/Monster.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java" />
         <option value="$PROJECT_DIR$/core/assets/monsters/Machina.json" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/character/PlayerData.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionRunInvalid.java" />
@@ -1973,7 +2018,6 @@
         <option value="$PROJECT_DIR$/core/assets/monsters/DemonCat.json" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/ui/hud/DebugHud.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/GameStore.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/GraphicsHelper.java" />
         <option value="$PROJECT_DIR$/core/assets/monsters/Muk.json" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java" />
@@ -1991,12 +2035,18 @@
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/contracts/BattleInvokable.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/enums/Choices.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Main.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItemTarget.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleInteractionState.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItem.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java" />
         <option value="$PROJECT_DIR$/core/assets/monsters/Slime.json" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/state/MenuState.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java" />
       </list>
     </option>
   </component>
@@ -2011,10 +2061,9 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1140" />
-    <option name="y" value="-1417" />
-    <option name="width" value="2560" />
-    <option name="height" value="1417" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2066,6 +2115,14 @@
             <path>
               <item name="roboraidergdx" type="b2602c69:ProjectViewProjectNode" />
               <item name="roboraider" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="roboraidergdx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="roboraider" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="desktop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -2096,10 +2153,10 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="slime.jso&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/assets/monsters/Slime.json&#10;battleke&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;Actionitem&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionItem&#10;battleinter&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;ActionitemTa&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionItemTarget&#10;battl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;main&#9;PSI&#9;JAVA://com.mygdx.game.Main&#10;main.java&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/Main.java&#10;BaseState&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BaseState.java&#10;battle&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;combats&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/CombatStage.java&#10;battlehandl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;desert&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;Flame&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.Flame&#10;Sl&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.Slash&#10;Main&#9;PSI&#9;JAVA://com.mygdx.game.Main&#10;configu&#9;PSI&#9;JAVA://com.mygdx.game.configuration.ConfigurationBuilder&#10;battlestatehe&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleStateHelper.java&#10;battlestate&#9;PSI&#9;JAVA://com.mygdx.game.state.BattleState&#10;Configuration&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;Main.ja&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/Main.java&#10;config&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;battlekey&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;actionattackApp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;battlein&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;uiHelp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleUiHelper.java&#10;actionattack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;actiona&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyShowDamage.java&#10;attack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;waiting&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/WaitingAction.java&#10;wait&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/WaitingAction.java&#10;confi&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;des&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;muk&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/monsters/Muk.json&#10;desert.json&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;damag&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/graphics/animation/DamageCounter.java&#10;monster&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/objects/Monster.java&#10;attacka&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;slash&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/graphics/animation/Slash.java&#10;localma&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;game&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/GameStore.java&#10;debughu&#9;PSI&#9;JAVA://com.mygdx.game.ui.hud.DebugHud&#10;demonc&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/monsters/DemonCat.json&#10;battleint&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;localmapk&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;battlek&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;localmap&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;statemac&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/state/StateMachine.java&#10;battlestat&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/state/BattleState.java&#10;entitybu&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/map/EntityBuilder.java" />
+    <property name="SearchEverywhereHistoryKey" value="fadetransitionout&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java&#10;Battle&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleStateHelper.java&#10;waiting&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.WaitingAction&#10;battlestate&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleStateHelper.java&#10;FadeTr&#9;PSI&#9;JAVA://com.mygdx.game.graphics.helpers.FadeTransitionOut&#10;EnemyA&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.EnemyAttack&#10;ActionAttackApplyCompl&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionAttackApplyComplete&#10;ActionAttack&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionAttackApplyShowDamage&#10;slime.jso&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/assets/monsters/Slime.json&#10;battleke&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;Actionitem&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionItem&#10;battleinter&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;ActionitemTa&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionItemTarget&#10;battl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;main&#9;PSI&#9;JAVA://com.mygdx.game.Main&#10;main.java&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/Main.java&#10;BaseState&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BaseState.java&#10;battle&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;combats&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/CombatStage.java&#10;battlehandl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;desert&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;Flame&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.Flame&#10;Sl&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.Slash&#10;Main&#9;PSI&#9;JAVA://com.mygdx.game.Main&#10;configu&#9;PSI&#9;JAVA://com.mygdx.game.configuration.ConfigurationBuilder&#10;battlestatehe&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleStateHelper.java&#10;Configuration&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;Main.ja&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/Main.java&#10;config&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;battlekey&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;actionattackApp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;battlein&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;uiHelp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleUiHelper.java&#10;actionattack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;actiona&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyShowDamage.java&#10;attack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;wait&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/WaitingAction.java&#10;confi&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/Configuration.json&#10;des&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;muk&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/monsters/Muk.json&#10;desert.json&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json&#10;damag&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/graphics/animation/DamageCounter.java&#10;monster&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/objects/Monster.java&#10;attacka&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;slash&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/graphics/animation/Slash.java&#10;localma&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java&#10;game&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/GameStore.java&#10;debughu&#9;PSI&#9;JAVA://com.mygdx.game.ui.hud.DebugHud&#10;demonc&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/monsters/DemonCat.json&#10;battleint&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/src/com/mygdx/game/battle/BattleInteractionState.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546304419071" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546363242538" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2274,7 +2331,7 @@
       <workItem from="1545754015706" duration="3172000" />
       <workItem from="1545765603050" duration="2231000" />
       <workItem from="1546045144497" duration="3775000" />
-      <workItem from="1546302613533" duration="1764000" />
+      <workItem from="1546302613533" duration="9546000" />
     </task>
     <servers />
   </component>
@@ -2284,7 +2341,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="841293000" />
+    <option name="totallyTimeSpent" value="849075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2296,10 +2353,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1140" y="-1417" width="2560" height="1417" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.09571088" />
+      <window_info content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.14713065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24980143" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -2309,13 +2366,13 @@
       <window_info id="Azure Explorer" order="7" weight="0.32967034" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49733475" weight="0.13516484" />
-      <window_info active="true" anchor="bottom" x="492" y="896" width="575" height="478" id="Run" order="2" sideWeight="0.4946695" visible="true" weight="0.0890566" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" weight="0.42747253" />
+      <window_info active="true" anchor="bottom" x="492" y="896" width="575" height="478" id="Run" order="2" sideWeight="0.4946695" visible="true" weight="0.12967034" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" weight="0.32197803" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5053305" side_tool="true" weight="0.21451788" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290566" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.45714286" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.3868132" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4989339" weight="0.1773585" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -2396,17 +2453,50 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/configuration/ConfigurationBuilder.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java</url>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -2473,76 +2563,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/items/IronSword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/items/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/items/LifeRing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/items/Potion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/models/PlayerProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1144">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/skills/contracts/Learnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/skills/enums/FieldType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/skills/Cure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/skills/Fire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/skills/Skill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/character/PlayerData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-133">
@@ -2578,13 +2598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/configuration/ConfigurationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/dialog/DialogManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2610,13 +2623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2740,17 +2746,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/state/BaseState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="e#1909#1910#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2761,37 +2764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="96" column="57" lean-forward="true" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleUiHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionItemTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2829,8 +2805,132 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/assets/monsters/Slime.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="405">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/configuration/ConfigurationBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyShowDamage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleUiHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/WaitingAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/input/handlers/LocalMapKeyPressHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="124" column="70" selection-start-line="124" selection-start-column="70" selection-end-line="124" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/state/MenuState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/DoneAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="23" column="63" lean-forward="true" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/TransitionRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+          <folding>
+            <element signature="e#4735#4736#0" expanded="true" />
+            <element signature="e#4770#4771#0" expanded="true" />
+            <element signature="e#4654#4655#0" expanded="true" />
+            <element signature="e#4696#4697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleStateHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="103" selection-start-line="16" selection-start-column="103" selection-end-line="16" selection-end-column="103" />
         </state>
       </provider>
     </entry>

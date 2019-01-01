@@ -22,7 +22,7 @@ public class FadeTransitionIn implements Renderable {
     public boolean render(GameStore store, Map<String, Object> props) {
         int seconds = (int)props.get("seconds");
 
-        if(store.transitionRenderer == null) {
+        if(store.transitionRenderer == null || store.transitionRenderer.getType() != TransitionType.In) {
             store.transitionRenderer = new TransitionRenderer(store, TransitionType.In, seconds);
         }
 

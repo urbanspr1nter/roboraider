@@ -25,7 +25,6 @@ public class TransitionRenderer {
     private float opacity;
     private ShapeRenderer shapeRenderer;
     private TransitionType transitionType;
-    private boolean customOpacity;
 
     public TransitionRenderer(GameStore store, TransitionType type, int seconds) {
         this.store = store;
@@ -48,11 +47,6 @@ public class TransitionRenderer {
     }
 
     public void render(float deltaTime, Color color) {
-        if(!this.customOpacity) {
-            this.opacity = color.a;
-            this.customOpacity = true;
-        }
-
         if(this.transitionType == TransitionType.In) {
             if(this.opacity <= 0.0f) {
                 // We are done, so we no longer need to transition.
@@ -134,6 +128,10 @@ public class TransitionRenderer {
 
     public float getOpacity() {
         return this.opacity;
+    }
+
+    public TransitionType getType() {
+        return this.transitionType;
     }
 
     private float getMs(float timeInSeconds) {

@@ -73,7 +73,7 @@ public class BattleStateHelper {
         if(this.store.currentEntity().getEnemies().size() == 0) {
             // This map does not have any random encounters.
 
-            // If current steps are less than the threshold, then reset to 0.
+            // If current steps are less than the threshold, then reset.
             if(this.store.getTotalSteps() <= 0) {
                 this.resetStepsToBattle();
             }

@@ -5,6 +5,7 @@ import com.mygdx.game.GameStore;
 import com.mygdx.game.battle.BattleHandler;
 import com.mygdx.game.battle.CombatStage;
 import com.mygdx.game.graphics.helpers.FadeTransitionIn;
+import com.mygdx.game.graphics.helpers.FadeTransitionOut;
 import com.mygdx.game.objects.Monster;
 
 import java.util.Date;
@@ -47,6 +48,7 @@ public class EnemyAttack extends BattleHandler {
                     this.store.playerData.applyAttack(m);
 
                     this.store.battleInteractionState.moveToStage(CombatStage.WaitingAction);
+                    this.store.battleInteractionState.getTimer().reset(250);
 
                     return true;
                 }
