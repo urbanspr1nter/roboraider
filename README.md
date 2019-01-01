@@ -107,6 +107,8 @@ A bunch of the included assets are either have been created by myself, procured 
 ui/cursor.png - https://opengameart.org/content/hand-cursor
 ```
 
+Original concept art done by: Janelia Ngo
+Original pixel art done by: Josh Cheney
 Orchid on title screen is by PumpkinGlitters at: http://pumpkinglitters.deviantart.com/ 
 
 ### Building The Project

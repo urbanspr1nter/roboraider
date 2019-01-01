@@ -116,6 +116,8 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 
 				if(t.location().x == cellX && t.location().y == cellY) {
 					if(t.action() == Action.Teleport) {
+						this.battleStateHelper.resetStepsToBattle();
+
 						this.gameStore.callbackQueue.registerImmediate(() -> new FadeTransitionIn()
 								.render(this.gameStore, this.graphicsHelper.getFadeProps(2, Color.BLACK)));
 

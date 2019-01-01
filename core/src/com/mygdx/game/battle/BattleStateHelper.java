@@ -24,12 +24,30 @@ import java.util.List;
 import java.util.Random;
 
 public class BattleStateHelper {
+    private static int MINIMUM_STEPS = 10;
+
     private GameStore store;
     private int currentBattleStepThreshold;
 
     public BattleStateHelper(GameStore store) {
         this.store = store;
         this.currentBattleStepThreshold = 0;
+    }
+
+    public void resetStepsToBattle() {
+        Random stepThresholdForBattleGenerator = new Random(new Date().getTime());
+        for(int i = 0; i < 6; i++) {
+            this.currentBattleStepThreshold = stepThresholdForBattleGenerator.nextInt(100) + 1;
+        }
+        if(this.currentBattleStepThreshold <= MINIMUM_STEPS) {
+            this.currentBattleStepThreshold *= 5;
+        } else {
+            this.currentBattleStepThreshold = stepThresholdForBattleGenerator.nextInt(100) + 1;
+        }
+
+        this.store.setSteps(this.currentBattleStepThreshold);
+
+        Logger.log("STEPS UNTIL NEXT BATTLE: " + this.currentBattleStepThreshold);
     }
 
     public void exitBattleIfNeeded() {
@@ -54,23 +72,17 @@ public class BattleStateHelper {
         }
         if(this.store.currentEntity().getEnemies().size() == 0) {
             // This map does not have any random encounters.
+
+            // If current steps are less than the threshold, then reset to 0.
+            if(this.store.getTotalSteps() <= 0) {
+                this.resetStepsToBattle();
+            }
+
             return;
         }
 
-        if(this.currentBattleStepThreshold == 0) {
-            Random stepThresholdForBattleGenerator = new Random(new Date().getTime());
-            for(int i = 0; i < 6; i++) {
-                this.currentBattleStepThreshold = stepThresholdForBattleGenerator.nextInt(100) + 1;
-            }
-            if(this.currentBattleStepThreshold <= 10) {
-                this.currentBattleStepThreshold *= 5;
-            } else {
-                this.currentBattleStepThreshold = stepThresholdForBattleGenerator.nextInt(100) + 1;
-            }
-
-            this.store.setSteps(this.currentBattleStepThreshold);
-
-            Logger.log("STEPS UNTIL NEXT BATTLE: " + this.currentBattleStepThreshold);
+        if(this.currentBattleStepThreshold <= 0) {
+            this.resetStepsToBattle();
         }
 
         if(this.store.getTotalSteps() <= 0) {
