@@ -16,7 +16,7 @@ public class ActionItem extends BattleHandler {
         this.uiManager.getInformationalBox().setMessage(whichItem);
         this.uiManager.getInformationalBox().render();
 
-        this.store.battleInteractionState.pushNewUtilityBoxChoice();
+        this.store.battleInteractionState.setUtilityBoxChoiceToFirst();
         this.uiManager.getItemBox().setData(this.store.playerData.getInventory());
         this.uiManager.getItemBox().render();
 

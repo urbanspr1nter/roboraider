@@ -28,7 +28,7 @@
   "profile": {
     "level": 5,
     "experience": 7,
-    "currentHp": 1,
+    "currentHp": 10,
     "maximumHp": 1,
     "currentMp": 5,
     "maximumMp": 5,

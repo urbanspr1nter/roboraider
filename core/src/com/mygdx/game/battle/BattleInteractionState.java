@@ -243,6 +243,15 @@ public class BattleInteractionState {
         return this.actionChoice;
     }
 
+    public void setUtilityBoxChoiceToPlayer() {
+        if(this.utilityBoxChoices.empty()) {
+            return;
+        }
+
+        this.utilityBoxChoices.pop();
+        this.utilityBoxChoices.push(-1);
+    }
+
     public void resetUtilityBoxChoice() {
         if(this.utilityBoxChoices.empty()) {
             return;
@@ -274,7 +283,7 @@ public class BattleInteractionState {
         return this.utilityBoxChoices.peek();
     }
 
-    public void pushNewUtilityBoxChoice() {
+    public void setUtilityBoxChoiceToFirst() {
         this.utilityBoxChoices.push(0);
     }
 

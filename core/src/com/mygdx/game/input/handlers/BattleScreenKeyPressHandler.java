@@ -102,13 +102,13 @@ public class BattleScreenKeyPressHandler extends DefaultKeyPressHandler {
 
             if(this.store.battleInteractionState.getActionChoice() == CursorOn.Attack) {
                 this.store.battleInteractionState.moveToStage(CombatStage.ActionAttack);
-                this.store.battleInteractionState.pushNewUtilityBoxChoice();
+                this.store.battleInteractionState.setUtilityBoxChoiceToFirst();
             } else if(this.store.battleInteractionState.getActionChoice() == CursorOn.Skill) {
                 this.store.battleInteractionState.moveToStage(CombatStage.ActionSkill);
-                this.store.battleInteractionState.pushNewUtilityBoxChoice();
+                this.store.battleInteractionState.setUtilityBoxChoiceToFirst();
             } else if(this.store.battleInteractionState.getActionChoice() == CursorOn.Item) {
                 this.store.battleInteractionState.moveToStage(CombatStage.ActionItem);
-                this.store.battleInteractionState.pushNewUtilityBoxChoice();
+                this.store.battleInteractionState.setUtilityBoxChoiceToFirst();
             } else if(this.store.battleInteractionState.getActionChoice() == CursorOn.Run) {
                 this.store.battleInteractionState.moveToStage(CombatStage.ActionRun);
             }
@@ -177,7 +177,7 @@ public class BattleScreenKeyPressHandler extends DefaultKeyPressHandler {
                 this.uiSounds.playError();
             } else {
                 this.store.battleInteractionState.moveToStage(CombatStage.ActionSkillTarget);
-                this.store.battleInteractionState.pushNewUtilityBoxChoice();
+                this.store.battleInteractionState.setUtilityBoxChoiceToFirst();
             }
         } else if(Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT)) {
             this.uiSounds.playCancel();
@@ -248,7 +248,7 @@ public class BattleScreenKeyPressHandler extends DefaultKeyPressHandler {
             );
 
             this.store.battleInteractionState.moveToStage(CombatStage.ActionItemTarget);
-            this.store.battleInteractionState.pushNewUtilityBoxChoice();
+            this.store.battleInteractionState.setUtilityBoxChoiceToPlayer();
         } else if(Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT)) {
             this.uiSounds.playCancel();
             this.store.battleInteractionState.moveToStage(CombatStage.WaitingAction);
