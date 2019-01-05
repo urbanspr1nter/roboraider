@@ -55,6 +55,7 @@ public class BattleState extends BaseState {
         this.handlers.put(CombatStage.ActionItem, new ActionItem(this.store));
         this.handlers.put(CombatStage.ActionItemTarget, new ActionItemTarget(this.store));
         this.handlers.put(CombatStage.ActionItemApply, new ActionItemApply(this.store));
+        this.handlers.put(CombatStage.ActionItemInvalid, new ActionItemInvalid(this.store));
         this.handlers.put(CombatStage.ActionRun, new ActionRun(this.store));
         this.handlers.put(CombatStage.ActionRunBoss, new ActionRunBoss(this.store));
         this.handlers.put(CombatStage.ActionRunSuccess, new ActionRunSuccess(this.store));

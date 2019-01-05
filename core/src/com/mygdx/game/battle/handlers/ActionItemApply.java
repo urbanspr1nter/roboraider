@@ -12,17 +12,16 @@ public class ActionItemApply extends BattleHandler {
 
     @Override
     public void handle(CombatStage stage) {
-        String usedItem = "Used\nitem!";
-
-        this.uiManager.getInformationalBox().setMessage(usedItem);
-        this.uiManager.getInformationalBox().render();
-
         Item item = this.store.battleInteractionState.getTargettedItem();
 
         if(this.store.battleInteractionState.getUtilityBoxChoice() == -1) {
+            String usedItem = "Used\nitem!";
+
+            this.uiManager.getInformationalBox().setMessage(usedItem);
+            this.uiManager.getInformationalBox().render();
+
             if(!item.isCombatable()) {
-                this.uiSounds.playError();
-                this.store.battleInteractionState.moveToStage(CombatStage.ActionItem);
+                this.handleInvalidItem();
             } else {
                 this.store.battleInteractionState.getTimer().run(() -> {
                     item.use();
@@ -42,9 +41,13 @@ public class ActionItemApply extends BattleHandler {
                 });
             }
         } else {
-            // Handle ITEM ON ENEMY TODO
-            this.uiSounds.playError();
-            this.store.battleInteractionState.moveToStage(CombatStage.ActionItem);
+            this.handleInvalidItem();
         }
+    }
+
+    private void handleInvalidItem() {
+        this.uiSounds.playError();
+        this.store.battleInteractionState.getTimer().reset(1000);
+        this.store.battleInteractionState.moveToStage(CombatStage.ActionItemInvalid);
     }
 }

@@ -39,6 +39,7 @@ public enum CombatStage {
     ActionItem, // Display list of item.
     ActionItemTarget, // Valid item chosen. Player should determine who to use item on... player, or monster?
     ActionItemApply, // Apply the item on the target.
+    ActionItemInvalid, // The item cannot be used in battle. Check by item.isCombatable()
 
     // The states in which choosing run can flow to.
     ActionRun, // Check to see if we can run. Is anyone a boss? Is it a scripted battle?

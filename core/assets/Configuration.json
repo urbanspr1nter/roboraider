@@ -83,7 +83,7 @@
       {
         "Type": "Sprite",
         "Name": "EnemySlimeSprite",
-        "File": "graphics/enemies/slime.png"
+        "File": "graphics/enemies/slime_base.png"
       },
       {
         "Type": "Sprite",
