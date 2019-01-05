@@ -20,14 +20,14 @@ import java.util.Map;
 public class FadeTransitionIn implements Renderable {
     @Override
     public boolean render(GameStore store, Map<String, Object> props) {
-        int seconds = (int)props.get("seconds");
+        int seconds = (int)props.get(TransitionProperties.Seconds);
 
         if(store.transitionRenderer == null || store.transitionRenderer.getType() != TransitionType.In) {
             store.transitionRenderer = new TransitionRenderer(store, TransitionType.In, seconds);
         }
 
-        if(props.containsKey("color")) {
-            Color color = (Color)props.get("color");
+        if(props.containsKey(TransitionProperties.Color)) {
+            Color color = (Color)props.get(TransitionProperties.Color);
             store.transitionRenderer.render(Gdx.graphics.getDeltaTime(), new Color(color.r, color.g, color.b, color.a));
         } else {
             store.transitionRenderer.render(Gdx.graphics.getDeltaTime(), new Color(0, 0, 0, 1.0f));
