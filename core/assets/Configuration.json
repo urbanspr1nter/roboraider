@@ -102,6 +102,11 @@
       },
       {
         "Type": "Background",
+        "Name": "WarehouseBattleBackground",
+        "File": "graphics/backdrop/warehouse.png"
+      },
+      {
+        "Type": "Background",
         "Name": "SkyBattleBackground",
         "File": "graphics/backdrop/sky.png"
       },
@@ -154,7 +159,7 @@
       {
         "Type": "Music",
         "Name": "DefaultBattleBgm",
-        "File": "music/battle.mp3",
+        "File": "music/rpg_battle_theme_ii.mp3",
         "Volume": 70
       },
       {

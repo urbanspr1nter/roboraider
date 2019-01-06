@@ -105,6 +105,7 @@ A bunch of the included assets are either have been created by myself, procured 
 
 ```
 ui/cursor.png - https://opengameart.org/content/hand-cursor
+music/rpg_battle_theme_ii.mp3 - Cleyton Kauffman - http://opengameart.org/users/doppelganger
 ```
 
 Original concept art done by: Janelia Ngo

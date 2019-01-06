@@ -100,7 +100,7 @@ public class BattleStateHelper {
                     this.store.battleInteractionState.setEnemies(this.generateEnemyListForEncounter());
                     this.store.battleInteractionState.setCurrentBackground(
                         new Texture(this.store.configuration.Assets.Registry
-                                .get("SkyBattleBackground").File)
+                                .get("WarehouseBattleBackground").File)
                     );
 
                     this.store.stateMachine.setState(
