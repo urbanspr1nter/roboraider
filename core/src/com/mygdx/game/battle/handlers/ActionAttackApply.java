@@ -54,7 +54,6 @@ public class ActionAttackApply extends BattleHandler {
                     m.applyAttack(this.store.playerData);
 
                     this.store.battleInteractionState.moveToStage(CombatStage.ActionAttackApplyShowDamage);
-
                 }, m);
             }
         }
