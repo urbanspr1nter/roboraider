@@ -82,6 +82,11 @@
     "Registry": [
       {
         "Type": "Sprite",
+        "Name": "CombatSelectionArrow",
+        "File": "ui/down_arrow.png"
+      },
+      {
+        "Type": "Sprite",
         "Name": "EnemySlimeSprite",
         "File": "graphics/enemies/slime_base.png"
       },

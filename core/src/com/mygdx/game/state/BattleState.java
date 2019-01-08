@@ -22,6 +22,7 @@ import java.util.*;
 
 public class BattleState extends BaseState {
     private Texture battleBgImage;
+    private Texture selectionArrow;
 
     private Map<CombatStage, BattleHandler> handlers;
 
@@ -35,6 +36,7 @@ public class BattleState extends BaseState {
         this.store.battleInteractionState.setBackgroundMusic("DefaultBattleBgm");
         this.store.battleInteractionState.setVictoryBackgroundMusic("VictoryFanfare");
         this.battleBgImage = this.store.battleInteractionState.getCurrentBackground();
+        this.selectionArrow = new Texture(this.store.configuration.Assets.Registry.get("CombatSelectionArrow").File);
 
         // Register all the handlers
         this.handlers = new HashMap<>();
@@ -88,6 +90,7 @@ public class BattleState extends BaseState {
                     .render();
             this.handlers.get(this.store.battleInteractionState.currentStage())
                     .handle(this.store.battleInteractionState.currentStage());
+            this.renderEnemySelectionArrow(this.store.battleInteractionState.currentStage());
         }
     }
 
@@ -107,6 +110,23 @@ public class BattleState extends BaseState {
             }
 
             i++;
+        }
+    }
+
+    private void renderEnemySelectionArrow(CombatStage stage) {
+        if(stage == CombatStage.ActionAttack && this.store.battleInteractionState.getUtilityBoxChoice() != -1) {
+            Monster m = this.store.battleInteractionState
+                    .getMonsters()
+                    .get(this.store.battleInteractionState.getUtilityBoxChoice());
+            this.store.spriteBatch.begin();
+            this.store.spriteBatch.draw(
+                    this.selectionArrow,
+                    m.getPosition().x + (m.getSize().x / 2.0f),
+                    m.getPosition().y + m.getSize().y,
+                    this.selectionArrow.getWidth(),
+                    this.selectionArrow.getHeight()
+            );
+            this.store.spriteBatch.end();
         }
     }
 
