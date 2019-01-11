@@ -56,7 +56,7 @@ public class Flame extends Animation {
             this.store.spriteBatch.begin();
             this.store.spriteBatch.draw(
                     new TextureRegion(this.spriteSheetTexture, frameIndex * 128, 0, 128, 128),
-                    m.getPosition().x + (float)(m.getSize().x / 2 - m.getPosition().x), m.getPosition().y + (float)(m.getSize().y / 2));
+                    m.getPosition().x + (m.getSize().x / 5.0f), m.getPosition().y + (m.getSize().y / 4.0f));
             this.store.spriteBatch.end();
         } else {
             if(ft.render(this.store, this.ftProps)) {

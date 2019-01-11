@@ -19,22 +19,8 @@ public class ActionAttackApply extends BattleHandler {
     public void handle(CombatStage stage) {
         this.store.battleInteractionState.setCursorVisibility(false);
 
-
         if (this.store.battleInteractionState.getUtilityBoxChoice() == -1) {
-            // TODO!!
-            this.store.playerData.getPlayerStatistics()
-                    .setCurrentHp(this.store.playerData.getPlayerStatistics().getCurrentHp() - 1);
-
-            if(this.store.playerData.getPlayerStatistics().getCurrentHp() <= 0) {
-                this.store.playerData.getPlayerStatistics().setCurrentHp(0);
-            }
-
-            this.store.callbackQueue.register(() -> {
-                FadeTransitionIn ft = new FadeTransitionIn();
-
-                return ft.render(this.store, this.uiHelper.getFadeProps(1, Color.RED));
-            });
-
+            this.store.battleInteractionState.getTimer().reset(500);
             this.store.battleInteractionState.moveToStage(CombatStage.ActionAttackApplyComplete);
         } else {
             Monster m = (Monster)this.store.battleInteractionState.getTargetted();

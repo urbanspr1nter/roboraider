@@ -114,14 +114,15 @@ public class BattleState extends BaseState {
     }
 
     private void renderEnemySelectionArrow(CombatStage stage) {
-        if(stage == CombatStage.ActionAttack && this.store.battleInteractionState.getUtilityBoxChoice() != -1) {
+        if((stage == CombatStage.ActionAttack || stage == CombatStage.ActionSkillTarget)
+                && this.store.battleInteractionState.getUtilityBoxChoice() != -1) {
             Monster m = this.store.battleInteractionState
                     .getMonsters()
                     .get(this.store.battleInteractionState.getUtilityBoxChoice());
             this.store.spriteBatch.begin();
             this.store.spriteBatch.draw(
                     this.selectionArrow,
-                    m.getPosition().x + (m.getSize().x / 2.0f),
+                    m.getPosition().x + (m.getSize().x / 3.0f),
                     m.getPosition().y + m.getSize().y,
                     this.selectionArrow.getWidth(),
                     this.selectionArrow.getHeight()

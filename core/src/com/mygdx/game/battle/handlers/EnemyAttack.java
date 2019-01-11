@@ -24,7 +24,9 @@ public class EnemyAttack extends BattleHandler {
             this.store.battleInteractionState.setEnemyIndex(0);
         }
 
-        Monster m = this.store.battleInteractionState.getMonsters().get(this.store.battleInteractionState.getEnemyIndex());
+        Monster m = this.store.battleInteractionState
+                .getMonsters()
+                .get(this.store.battleInteractionState.getEnemyIndex());
 
         this.uiManager.getInformationalBox()
                 .setMessage(m.getProfile().getName() + "\nattacks!");
@@ -39,7 +41,7 @@ public class EnemyAttack extends BattleHandler {
                     Random rand = new Random(new Date().getTime());
 
                     this.store.battleInteractionState.setEnemyIndex(
-                            rand.nextInt(this.store.battleInteractionState.getMonsters().size())
+                        rand.nextInt(this.store.battleInteractionState.getMonsters().size())
                     );
 
                     if(this.store.battleInteractionState.getEnemyIndex() == this.store.battleInteractionState.getMonsters().size()) {
