@@ -7,7 +7,7 @@
  * Defines the various states in which the battle can flow to.
  */
 
-package com.mygdx.game.battle;
+package com.mygdx.game.battle.enums;
 
 public enum CombatStage {
     // Displays the following and waits for player input:
@@ -59,6 +59,7 @@ public enum CombatStage {
     BattleEndItem, // Get Item
     BattleEndItemApplied, // Item has been placed into inventory
     BattleEndExit, // Exit now
+    BattleEndDeathExit, // The player has lost the battle, reset te game.
 
     // Finishing the battle.
     Done, // Fade out, and cleaned up

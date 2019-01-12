@@ -18,6 +18,7 @@ import com.mygdx.game.battle.BattleInteractionState;
 import com.mygdx.game.character.PlayerData;
 import com.mygdx.game.configuration.Configuration;
 import com.mygdx.game.configuration.models.Entity;
+import com.mygdx.game.enums.GameState;
 import com.mygdx.game.graphics.TransitionRenderer;
 import com.mygdx.game.map.EntityBuilder;
 import com.mygdx.game.state.StateMachine;
@@ -33,6 +34,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GameStore {
+    public GameState gameState;
     private long totalSteps;
     private boolean keyPressDisabled;
 

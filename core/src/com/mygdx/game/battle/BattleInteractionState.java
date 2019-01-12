@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.audio.UiSounds;
 import com.mygdx.game.battle.dependency.InjecteeContainer;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.character.items.Item;
 import com.mygdx.game.character.skills.Skill;
 import com.mygdx.game.graphics.animation.DamageCounter;

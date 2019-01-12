@@ -4,7 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.audio.UiSounds;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.character.items.Item;
 
 import java.util.LinkedList;

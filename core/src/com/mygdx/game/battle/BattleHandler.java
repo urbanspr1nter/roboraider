@@ -3,6 +3,7 @@ package com.mygdx.game.battle;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.audio.UiSounds;
 import com.mygdx.game.battle.contracts.BattleInvokable;
+import com.mygdx.game.battle.enums.CombatStage;
 
 public abstract class BattleHandler implements BattleInvokable {
     protected GameStore store;

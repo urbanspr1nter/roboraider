@@ -10,7 +10,7 @@
 
 package com.mygdx.game.battle.contracts;
 
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 
 public interface BattleInvokable {
     void handle(CombatStage stage);

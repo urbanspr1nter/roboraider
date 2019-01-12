@@ -4,7 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.battle.BattleHandler;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.graphics.helpers.FadeTransitionOut;
 
 public class DoneAction extends BattleHandler {

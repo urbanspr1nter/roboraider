@@ -11,10 +11,10 @@ package com.mygdx.game.battle;
 
 import com.badlogic.gdx.graphics.Color;
 import com.mygdx.game.GameStore;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.graphics.GraphicsHelper;
 
 import java.awt.*;
-import java.util.HashMap;
 import java.util.Map;
 
 public class BattleUiHelper {

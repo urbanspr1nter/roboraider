@@ -3,9 +3,8 @@ package com.mygdx.game.battle.handlers;
 import com.badlogic.gdx.graphics.Color;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.battle.BattleHandler;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.graphics.helpers.FadeTransitionIn;
-import com.mygdx.game.graphics.helpers.FadeTransitionOut;
 import com.mygdx.game.objects.Monster;
 
 import java.util.Date;
@@ -44,12 +43,17 @@ public class EnemyAttack extends BattleHandler {
                         rand.nextInt(this.store.battleInteractionState.getMonsters().size())
                     );
 
-                    if(this.store.battleInteractionState.getEnemyIndex() == this.store.battleInteractionState.getMonsters().size()) {
+                    if(this.store.battleInteractionState.getEnemyIndex()
+                            == this.store.battleInteractionState.getMonsters().size()) {
                         this.store.battleInteractionState.setEnemyIndex(0);
                     }
                     this.store.playerData.applyAttack(m);
 
-                    this.store.battleInteractionState.moveToStage(CombatStage.WaitingAction);
+                    if(this.store.playerData.getPlayerStatistics().getCurrentHp() <= 0) {
+                        this.store.battleInteractionState.moveToStage(CombatStage.BattleEndDeath);
+                    } else {
+                        this.store.battleInteractionState.moveToStage(CombatStage.WaitingAction);
+                    }
                     this.store.battleInteractionState.getTimer().reset(250);
 
                     return true;

@@ -1,11 +1,9 @@
 package com.mygdx.game.battle.handlers;
 
-import com.badlogic.gdx.graphics.Color;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.battle.BattleHandler;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.character.enums.EquipmentAreas;
-import com.mygdx.game.graphics.helpers.FadeTransitionIn;
 import com.mygdx.game.objects.Monster;
 
 import java.awt.*;

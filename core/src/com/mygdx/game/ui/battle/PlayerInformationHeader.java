@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.mygdx.game.GameStore;
-import com.mygdx.game.battle.CombatStage;
 import com.mygdx.game.ui.DialogBox;
 import com.mygdx.game.ui.DialogBoxPositions;
 import com.mygdx.game.ui.enums.DialogBoxSize;
@@ -64,17 +63,19 @@ public class PlayerInformationHeader {
         this.shapeRenderer.setColor(new Color(0.5f, 0.5f, 0.5f, 0.33f));
         this.shapeRenderer.rect(196, 458, 120, 4);
 
-        float hpRatio = (float)(this.store.playerData.getPlayerStatistics().getCurrentHp()) /
-                this.store.playerData.getPlayerStatistics().getMaximumHp();
+        if(this.store.playerData.getPlayerStatistics().getCurrentHp() > 0) {
+            float hpRatio = (float)(this.store.playerData.getPlayerStatistics().getCurrentHp()) /
+                    this.store.playerData.getPlayerStatistics().getMaximumHp();
 
-        if(hpRatio >= 0.5) {
-            this.shapeRenderer.setColor(Color.FOREST);
-        } else if(hpRatio <= 0.5 && hpRatio >= 0.25) {
-            this.shapeRenderer.setColor(Color.GOLDENROD);
-        } else {
-            this.shapeRenderer.setColor(Color.FIREBRICK);
+            if(hpRatio >= 0.5) {
+                this.shapeRenderer.setColor(Color.FOREST);
+            } else if(hpRatio <= 0.5 && hpRatio >= 0.25) {
+                this.shapeRenderer.setColor(Color.GOLDENROD);
+            } else {
+                this.shapeRenderer.setColor(Color.FIREBRICK);
+            }
+            this.shapeRenderer.rect(196, 458, Math.round(120 * hpRatio), 4);
         }
-        this.shapeRenderer.rect(196, 458, Math.round(120 * hpRatio), 4);
 
         /*
             MP BAR
@@ -82,11 +83,14 @@ public class PlayerInformationHeader {
         this.shapeRenderer.setColor(new Color(0.5f, 0.5f, 0.5f, 0.33f));
         this.shapeRenderer.rect(196, 455, 120, 3);
 
-        float mpRatio = (float)(this.store.playerData.getPlayerStatistics().getCurrentMp()) /
-                this.store.playerData.getPlayerStatistics().getMaximumMp();
+        if(this.store.playerData.getPlayerStatistics().getCurrentMp() > 0) {
+            float mpRatio = (float)(this.store.playerData.getPlayerStatistics().getCurrentMp()) /
+                    this.store.playerData.getPlayerStatistics().getMaximumMp();
 
-        this.shapeRenderer.setColor(Color.PURPLE);
-        this.shapeRenderer.rect(196, 455, Math.round(120 * mpRatio), 3);
+            this.shapeRenderer.setColor(Color.PURPLE);
+            this.shapeRenderer.rect(196, 455, Math.round(120 * mpRatio), 3);
+        }
+
 
         this.shapeRenderer.end();
     }
@@ -94,17 +98,30 @@ public class PlayerInformationHeader {
     private String getPlayerInformation() {
         StringBuilder sb = new StringBuilder();
 
+        int currentHp = this.store.playerData.getPlayerStatistics().getCurrentHp();
+        int currentMp = this.store.playerData.getPlayerStatistics().getCurrentMp();
+
         sb.append(this.store.playerData.getPlayerStatistics().getName());
         sb.append(", LEVEL ");
         sb.append(this.store.playerData.getPlayerStatistics().getLevel());
         sb.append(System.lineSeparator());
+
         sb.append("   HP: ");
-        sb.append(this.store.playerData.getPlayerStatistics().getCurrentHp());
+        if(currentHp <= 0) {
+            sb.append("0");
+        } else {
+            sb.append(currentHp);
+        }
         sb.append(" / ");
         sb.append(this.store.playerData.getPlayerStatistics().getMaximumHp());
         sb.append(System.lineSeparator());
+
         sb.append("   MP: ");
-        sb.append(this.store.playerData.getPlayerStatistics().getCurrentMp());
+        if(currentMp <= 0) {
+            sb.append("0");
+        } else {
+            sb.append(currentMp);
+        }
         sb.append(" / ");
         sb.append(this.store.playerData.getPlayerStatistics().getMaximumMp());
 

@@ -2,7 +2,7 @@ package com.mygdx.game.battle.handlers;
 
 import com.mygdx.game.GameStore;
 import com.mygdx.game.battle.BattleHandler;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 
 public class ActionSkillTarget extends BattleHandler {
     public ActionSkillTarget(GameStore store) {

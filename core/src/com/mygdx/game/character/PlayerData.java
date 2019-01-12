@@ -60,8 +60,8 @@ public class PlayerData implements Targetable {
 
         Random rand = new Random(new Date().getTime());
 
-        int damage = (int)Math.round(playerAttack - (monsterDefense * 0.67)
-                - (0.5 * rand.nextInt(13)));
+        int damage = Math.abs((int)Math.round(playerAttack - (monsterDefense * 0.67)
+                - (0.5 * rand.nextInt(13))));
         this.getPlayerStatistics().setCurrentHp(this.getPlayerStatistics().getCurrentHp() - damage);
         Logger.log("DEALT " + damage + "DMG! Current HP " + this.getPlayerStatistics().getCurrentHp());
         return false;
@@ -166,7 +166,7 @@ public class PlayerData implements Targetable {
 
         this.gold = MAX_GOLD;
 
-        for(int i = 0; i < 6; i++) {
+        for(int i = 0; i < 1; i++) {
             this.levelUp();
         }
 

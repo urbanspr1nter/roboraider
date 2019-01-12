@@ -204,6 +204,12 @@
       },
       {
         "Type": "Music",
+        "Name": "GameOver",
+        "File": "music/game_over.mp3",
+        "Volume": 70
+      },
+      {
+        "Type": "Music",
         "Name": "DesertBgTheme",
         "File": "music/desert.mp3",
         "Volume": 50

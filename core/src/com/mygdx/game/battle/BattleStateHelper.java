@@ -12,6 +12,7 @@ package com.mygdx.game.battle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.mygdx.game.GameStore;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.graphics.GraphicsHelper;
 import com.mygdx.game.graphics.helpers.FadeTransitionOut;
 import com.mygdx.game.logging.Logger;

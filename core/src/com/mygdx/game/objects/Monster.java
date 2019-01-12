@@ -5,7 +5,7 @@ import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.mygdx.game.GameStore;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.character.PlayerData;
 import com.mygdx.game.character.items.Item;
 import com.mygdx.game.character.skills.Skill;
@@ -103,8 +103,8 @@ public class Monster implements Targetable, Escapable {
             this.rand.setSeed(new Date().getTime());
         }
 
-        return (int)Math.round(playerAttack - (monsterDefense * 0.67)
-                - (0.5 * this.rand.nextInt(9)));
+        return Math.abs((int)Math.round(playerAttack - (monsterDefense * 0.67)
+                - (0.5 * this.rand.nextInt(9))));
     }
 
     public int getSkillDamage(PlayerData player) {

@@ -23,6 +23,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.mygdx.game.audio.UiSounds;
 import com.mygdx.game.battle.BattleStateHelper;
 import com.mygdx.game.configuration.Configuration;
+import com.mygdx.game.enums.GameState;
 import com.mygdx.game.graphics.GraphicsHelper;
 import com.mygdx.game.graphics.helpers.FadeTransitionIn;
 import com.mygdx.game.logging.Logger;
@@ -43,8 +44,6 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 	public Main(Configuration configuration) {
 		super();
 		this.config = configuration;
-
-		this.graphicsHelper = new GraphicsHelper();
 	}
 
 	@Override
@@ -58,9 +57,12 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 
 	@Override
 	public void create () {
+		this.graphicsHelper = new GraphicsHelper();
+
 		Gdx.app.setLogLevel(this.config.Game.LogLevel);
 
 		this.gameStore = new GameStore(this.config);
+		this.gameStore.gameState = GameState.Running;
 		this.gameStore.debug = this.config.Game.Debug;
 		this.battleStateHelper = new BattleStateHelper(this.gameStore);
 
@@ -81,7 +83,6 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 				return false;
 			}
 		});
-
 	}
 
 	@Override
@@ -90,19 +91,24 @@ public class Main extends ApplicationAdapter implements ApplicationListener {
 		Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-		this.gameStore.totalPlayTime += ((new Date().getTime()) - this.gameStore.startTime);
-		this.gameStore.startTime = new Date().getTime();
 
-		this.update();
-		this.gameStore.stateMachine.getState().execute();
+		if(this.gameStore.gameState == GameState.Reset) {
+			this.create();
+		} else if(this.gameStore.gameState == GameState.Running) {
+			this.gameStore.totalPlayTime += ((new Date().getTime()) - this.gameStore.startTime);
+			this.gameStore.startTime = new Date().getTime();
 
-		// Exit battle if needed
-		this.battleStateHelper.exitBattleIfNeeded();
+			this.update();
+			this.gameStore.stateMachine.getState().execute();
 
-		// Any battles?
-		this.battleStateHelper.goToBattleIfNeeded();
+			// Exit battle if needed
+			this.battleStateHelper.exitBattleIfNeeded();
 
-		this.handleTriggers();
+			// Any battles?
+			this.battleStateHelper.goToBattleIfNeeded();
+
+			this.handleTriggers();
+		}
 	}
 
 	private void handleTriggers() {

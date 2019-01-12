@@ -3,7 +3,7 @@ package com.mygdx.game.battle.handlers;
 import com.badlogic.gdx.graphics.Color;
 import com.mygdx.game.GameStore;
 import com.mygdx.game.battle.BattleHandler;
-import com.mygdx.game.battle.CombatStage;
+import com.mygdx.game.battle.enums.CombatStage;
 import com.mygdx.game.graphics.GraphicsHelper;
 import com.mygdx.game.graphics.helpers.FadeTransitionIn;
 
@@ -71,7 +71,7 @@ public class ActionAttackApplyComplete extends BattleHandler {
     }
 
     private void attackEnemy(CombatStage stage) {
-        if(this.store.playerData.getPlayerStatistics().getCurrentHp() == 0) {
+        if(this.store.playerData.getPlayerStatistics().getCurrentHp() <= 0) {
             this.store.battleInteractionState.getTimer().run(() -> {
                 this.store.battleInteractionState.moveToStage(CombatStage.BattleEndDeath);
 
