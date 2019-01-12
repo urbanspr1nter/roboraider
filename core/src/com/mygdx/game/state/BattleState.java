@@ -42,13 +42,16 @@ public class BattleState extends BaseState {
 
         // Initialize the victory BGM
         this.victoryBgm
-                = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get("VictoryFanfare").File));
+            = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get("VictoryFanfare").File));
         this.victoryBgm.setLooping(true);
         this.victoryBgm.setVolume(this.store.configuration.Assets.Registry.get("VictoryFanfare").Volume);
 
         // Initialize the game over BGM
         this.gameOverBgm
-                = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get("GameOver").File));
+            = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get("GameOver").File));
+        this.gameOverBgm.setLooping(true);
+        this.gameOverBgm.setVolume(this.store.configuration.Assets.Registry.get("GameOver").Volume);
+
         this.battleBgImage = this.store.battleInteractionState.getCurrentBackground();
 
         this.selectionArrow = new Texture(this.store.configuration.Assets.Registry.get("CombatSelectionArrow").File);
@@ -94,18 +97,7 @@ public class BattleState extends BaseState {
 
     @Override
     protected void onExecute() {
-        if(this.store.battleInteractionState.currentStage() == CombatStage.BattleEndDeath) {
-            if(!this.gameOverBgm.isPlaying()) {
-                this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
-                this.gameOverBgm.play();
-            }
-        }
-        if(this.store.battleInteractionState.currentStage() == CombatStage.BattleEnd) {
-            if(!this.victoryBgm.isPlaying()) {
-                this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
-                this.victoryBgm.play();
-            }
-        }
+        this.handleBgm(this.store.battleInteractionState.currentStage());
 
         if(this.store.battleInteractionState.currentStage() == CombatStage.BattleEndDeathExit) {
             this.exit();
@@ -123,6 +115,21 @@ public class BattleState extends BaseState {
             this.handlers.get(this.store.battleInteractionState.currentStage())
                     .handle(this.store.battleInteractionState.currentStage());
             this.renderEnemySelectionArrow(this.store.battleInteractionState.currentStage());
+        }
+    }
+
+    private void handleBgm(CombatStage stage) {
+        if(stage == CombatStage.BattleEndDeath) {
+            if(!this.gameOverBgm.isPlaying()) {
+                this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
+                this.gameOverBgm.play();
+            }
+        }
+        if(stage == CombatStage.BattleEnd) {
+            if(!this.victoryBgm.isPlaying()) {
+                this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
+                this.victoryBgm.play();
+            }
         }
     }
 

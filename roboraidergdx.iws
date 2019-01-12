@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a34b8d29-f8ce-4622-a853-80ac9ab77e63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleInteractionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/BattleInteractionState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/BattleEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/BattleEnd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/BattleEndDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/battle/handlers/BattleEndDeath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/character/PlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/character/PlayerData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/state/BattleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/state/BattleState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -259,14 +255,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13079" />
+          <entry key="java" value="13263" />
           <entry key="json" value="318" />
           <entry key="md" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13079" />
+          <entry key="JAVA" value="13263" />
           <entry key="JSON" value="318" />
           <entry key="Markdown" value="70" />
         </counts>
@@ -274,7 +270,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.62949103">
+    <splitter split-orientation="horizontal" split-proportion="0.7148204">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -301,8 +297,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/state/BattleState.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                <state relative-caret-position="566">
+                  <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -2310,7 +2306,7 @@
     <property name="SearchEverywhereHistoryKey" value="player&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/character/PlayerData.java&#10;battleS&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;battle&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;Gamesto&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/GameStore.java&#10;info&#9;PSI&#9;JAVA://com.mygdx.game.ui.battle.PlayerInformationHeader&#10;main&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/Main.java&#10;battleinter&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleInteractionState.java&#10;config&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/assets/Configuration.json&#10;README&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/README.md&#10;Monst&#9;PSI&#9;JAVA://com.mygdx.game.objects.Monster&#10;Play&#9;PSI&#9;JAVA://com.mygdx.game.character.PlayerData&#10;Action&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;PlayerD&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/character/PlayerData.java&#10;Flame&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/graphics/animation/Flame.java&#10;Fire&#9;PSI&#9;JAVA://com.mygdx.game.character.skills.Fire&#10;ActionA&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;ActionSkill&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionSkillApply&#10;Dela&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/DelayEnemyAttack.java&#10;Enem&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.DelayEnemyAttack&#10;Ene&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/EnemyAttack.java&#10;battlest&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;ActionAttack&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionAttack&#10;ActionSk&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionSkillTargetChosen.java&#10;Skill&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionSkillApply&#10;ActionAttackApplyComp&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;Dama&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/graphics/animation/DamageCounter.java&#10;battleuih&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleUiHelper.java&#10;battlestate&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BattleState.java&#10;ActionAttackApplyCom&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionAttackApplyComplete.java&#10;Attack&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionAttackApply.java&#10;Damage&#9;PSI&#9;JAVA://com.mygdx.game.graphics.animation.DamageCounter&#10;Configuration.js&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/assets/Configuration.json&#10;ActionItem&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/handlers/ActionItemApply.java&#10;BattleState&#9;PSI&#9;JAVA://com.mygdx.game.state.BattleState&#10;fadetransitionout&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/graphics/helpers/FadeTransitionOut.java&#10;Battle&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleStateHelper.java&#10;waiting&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.WaitingAction&#10;FadeTr&#9;PSI&#9;JAVA://com.mygdx.game.graphics.helpers.FadeTransitionOut&#10;EnemyA&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.EnemyAttack&#10;ActionAttackApplyCompl&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionAttackApplyComplete&#10;slime.jso&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/assets/monsters/Slime.json&#10;battleke&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/input/handlers/BattleScreenKeyPressHandler.java&#10;Actionitem&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionItem&#10;ActionitemTa&#9;PSI&#9;JAVA://com.mygdx.game.battle.handlers.ActionItemTarget&#10;battl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;main.java&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/Main.java&#10;BaseState&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/state/BaseState.java&#10;combats&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/CombatStage.java&#10;battlehandl&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/roboraider/core/src/com/mygdx/game/battle/BattleHandler.java&#10;desert&#9;FILE&#9;file:///Users/rogerngo/Dropbox/CodeRepo/prototypes/game/roboraidergdx/core/assets/entities/Desert.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547312289864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547312661372" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2486,7 +2482,7 @@
       <workItem from="1545765603050" duration="2231000" />
       <workItem from="1546045144497" duration="3775000" />
       <workItem from="1546302613533" duration="21061000" />
-      <workItem from="1546782012878" duration="28393000" />
+      <workItem from="1546782012878" duration="28624000" />
     </task>
     <servers />
   </component>
@@ -2496,7 +2492,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="888983000" />
+    <option name="totallyTimeSpent" value="889214000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3074,8 +3070,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/state/BattleState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="566">
+          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
