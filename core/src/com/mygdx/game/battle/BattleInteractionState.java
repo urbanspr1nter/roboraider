@@ -27,7 +27,6 @@ public class BattleInteractionState {
     private InjecteeContainer diContainer;
     private Timer battleTimer;
     private Music currentBgm;
-    private Music currentVictoryBgm;
     private Texture currentBackground;
     private int enemyIndex;
     private Cursor cursor;
@@ -159,19 +158,6 @@ public class BattleInteractionState {
 
     public Music getCurrentBackgroundMusic() {
         return this.currentBgm;
-    }
-
-    public void setVictoryBackgroundMusic(String musicAssetName) {
-        this.currentVictoryBgm
-                = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get(musicAssetName).File));
-        if(this.currentVictoryBgm != null) {
-            this.currentVictoryBgm.setLooping(true);
-            this.currentVictoryBgm.setVolume(this.store.configuration.Assets.Registry.get(musicAssetName).Volume);
-        }
-    }
-
-    public Music getCurrentVictoryBgm() {
-        return this.currentVictoryBgm;
     }
 
     private void registerObjectsForInjection() {

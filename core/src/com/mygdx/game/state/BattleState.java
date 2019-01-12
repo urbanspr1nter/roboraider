@@ -26,6 +26,7 @@ import java.util.*;
 public class BattleState extends BaseState {
     private Texture battleBgImage;
     private Texture selectionArrow;
+    private Music victoryBgm;
     private Music gameOverBgm;
 
     private Map<CombatStage, BattleHandler> handlers;
@@ -38,10 +39,18 @@ public class BattleState extends BaseState {
         //this.store.battleInteractionState = new BattleInteractionState(this.store);
 
         this.store.battleInteractionState.setBackgroundMusic("DefaultBattleBgm");
-        this.store.battleInteractionState.setVictoryBackgroundMusic("VictoryFanfare");
+
+        // Initialize the victory BGM
+        this.victoryBgm
+                = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get("VictoryFanfare").File));
+        this.victoryBgm.setLooping(true);
+        this.victoryBgm.setVolume(this.store.configuration.Assets.Registry.get("VictoryFanfare").Volume);
+
+        // Initialize the game over BGM
         this.gameOverBgm
                 = Gdx.audio.newMusic(Gdx.files.internal(this.store.configuration.Assets.Registry.get("GameOver").File));
         this.battleBgImage = this.store.battleInteractionState.getCurrentBackground();
+
         this.selectionArrow = new Texture(this.store.configuration.Assets.Registry.get("CombatSelectionArrow").File);
 
         // Register all the handlers
@@ -71,6 +80,7 @@ public class BattleState extends BaseState {
         this.handlers.put(CombatStage.BattleEndFromRun, new BattleEndFromRun(this.store));
         this.handlers.put(CombatStage.BattleEnd, new BattleEnd(this.store));
         this.handlers.put(CombatStage.BattleEndDeath, new BattleEndDeath(this.store));
+        this.handlers.put(CombatStage.BattleEndDeathExit, null);
         this.handlers.put(CombatStage.BattleEndApplied, new BattleEndApplied(this.store));
         this.handlers.put(CombatStage.BattleEndExp, new BattleEndExp(this.store));
         this.handlers.put(CombatStage.BattleEndExpApplied, new BattleEndExpApplied(this.store));
@@ -90,6 +100,13 @@ public class BattleState extends BaseState {
                 this.gameOverBgm.play();
             }
         }
+        if(this.store.battleInteractionState.currentStage() == CombatStage.BattleEnd) {
+            if(!this.victoryBgm.isPlaying()) {
+                this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
+                this.victoryBgm.play();
+            }
+        }
+
         if(this.store.battleInteractionState.currentStage() == CombatStage.BattleEndDeathExit) {
             this.exit();
             this.store.gameState = GameState.Reset;
@@ -164,13 +181,14 @@ public class BattleState extends BaseState {
             this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
             this.store.battleInteractionState.getCurrentBackgroundMusic().dispose();
         }
-        if(this.store.battleInteractionState.getCurrentVictoryBgm() != null) {
-            this.store.battleInteractionState.getCurrentVictoryBgm().stop();
-            this.store.battleInteractionState.getCurrentVictoryBgm().dispose();
+        if(this.victoryBgm.isPlaying()) {
+            this.victoryBgm.stop();
         }
         if(this.gameOverBgm.isPlaying()) {
             this.gameOverBgm.stop();
-            this.gameOverBgm.dispose();
         }
+
+        this.victoryBgm.dispose();
+        this.gameOverBgm.dispose();
     }
 }

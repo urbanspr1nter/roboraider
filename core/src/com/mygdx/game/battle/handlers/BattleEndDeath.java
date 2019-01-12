@@ -1,3 +1,13 @@
+/*
+ * BattleEndDeath.java
+ *
+ * Author: Roger Ngo
+ * Copyright 2019
+ *
+ * Handles the combat stage of the player dying.
+ *
+ * Allow for some time to build up for the sadness... fade, and restart the game.
+ */
 package com.mygdx.game.battle.handlers;
 
 import com.badlogic.gdx.graphics.Color;
@@ -15,7 +25,6 @@ public class BattleEndDeath extends BattleHandler {
     public BattleEndDeath(GameStore store) {
         super(store);
         this.battleEndDeathTimer = new Timer(6000);
-
         this.gfxHelper = new GraphicsHelper();
     }
 

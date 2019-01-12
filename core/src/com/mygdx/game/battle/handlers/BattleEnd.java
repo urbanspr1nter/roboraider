@@ -11,9 +11,6 @@ public class BattleEnd extends BattleHandler {
 
     @Override
     public void handle(CombatStage stage) {
-        this.store.battleInteractionState.getCurrentBackgroundMusic().stop();
-        this.store.battleInteractionState.getCurrentVictoryBgm().play();
-
         this.store.battleInteractionState.moveToStage(CombatStage.BattleEndApplied);
     }
 }
